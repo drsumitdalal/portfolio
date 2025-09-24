@@ -1,219 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Research Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Sumit Dalal - Academic Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9fb;
       color: #333;
-      transition: background 0.3s, color 0.3s;
     }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    /* Navbar */
     .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       background: #1b263b;
-      padding: 10px 20px;
     }
-
     .navbar a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
+      color: #f1f1f1 !important;
+      font-weight: 500;
     }
-
-    .navbar a:hover {
-      color: #ffb703;
-    }
-
-    .toggle-btn {
-      background: #ffb703;
-      border: none;
-      padding: 6px 12px;
-      cursor: pointer;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    /* Header */
     .header {
       text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(to right, #1b263b, #0d1b2a);
+      padding: 50px 20px;
+      background: linear-gradient(to right, #1b263b, #415a77);
       color: #fff;
-      border-radius: 0 0 20px 20px;
+      border-radius: 0 0 30px 30px;
+      margin-bottom: 40px;
     }
-
-    .header h1 {
-      margin-bottom: 10px;
+    .header img {
+      border-radius: 50%;
+      border: 4px solid #fff;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
     }
-
-    /* Sections */
-    .section {
-      margin: 30px 0;
-    }
-
-    .section h2 {
-      border-left: 6px solid #1b263b;
-      padding-left: 10px;
-      margin-bottom: 15px;
+    h2 {
+      border-left: 6px solid #415a77;
+      padding-left: 12px;
+      margin-bottom: 20px;
       color: #1b263b;
+      font-weight: bold;
     }
-
-    /* Cards */
     .card {
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 12px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
     }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    /* Footer */
     .footer {
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+      padding: 20px;
+      margin-top: 40px;
       background: #1b263b;
-      color: #fff;
+      color: #f1f1f1;
+      border-radius: 20px 20px 0 0;
     }
-
-    /* 🌙 Dark Mode */
-    body.dark-mode {
-      background: #121212;
-      color: #e1e1e1;
+    .social-icons a {
+      color: #f1f1f1;
+      margin: 0 10px;
+      font-size: 1.4em;
+      transition: color 0.3s ease;
     }
-
-    body.dark-mode .navbar {
-      background: #0d1b2a;
-    }
-
-    body.dark-mode .navbar a {
-      color: #e1e1e1 !important;
-    }
-
-    body.dark-mode .header {
-      background: linear-gradient(to right, #0d1b2a, #1b263b);
-    }
-
-    body.dark-mode h2 {
+    .social-icons a:hover {
       color: #ffb703;
-      border-left-color: #ffb703;
-    }
-
-    body.dark-mode .card {
-      background: #1e293b;
-      color: #f1f1f1;
-    }
-
-    body.dark-mode .footer {
-      background: #0d1b2a;
-      color: #f1f1f1;
     }
   </style>
 </head>
 <body>
+
   <!-- Navbar -->
-  <div class="navbar">
-    <div>
-      <a href="#about">About</a>
-      <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Dr. Sumit Dalal</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
-  </div>
+  </nav>
 
   <!-- Header -->
   <div class="header">
-    <h1>Your Name</h1>
-    <p>PhD Researcher | Explainable Neuro-Symbolic AI | Mental Health & Legal AI</p>
+    <img src="profile.jpg" alt="Dr. Sumit Dalal">
+    <h1 class="mt-3">Dr. Sumit Dalal</h1>
+    <p>Assistant Professor, Bennett University (The Times Group), India</p>
+    <p><em>Research: Explainable AI • Neuro-Symbolic AI • Mental Health Informatics</em></p>
+    <div class="social-icons mt-3">
+      <a href="mailto:sumitdalal9050@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://scholar.google.com/citations?user=vXnzKD8AAAAJ&hl=en"><i class="fa-brands fa-google"></i></a>
+      <a href="https://orcid.org/0000-0002-8736-2148"><i class="fa-brands fa-orcid"></i></a>
+      <a href="https://www.linkedin.com/in/drsumitdalal"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/drsumitdalal/"><i class="fa-brands fa-github"></i></a>
+    </div>
   </div>
 
+  <!-- Sections -->
   <div class="container">
-    <!-- About -->
-    <div class="section" id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a researcher specializing in explainable neuro-symbolic multimodal AI for mental health detection and legal applications. My work integrates social media and clinical data with domain ontologies to ensure interpretability and trustworthiness in AI models.
-      </p>
+
+    <div id="education" class="card p-4">
+      <h2>Education</h2>
+      <ul>
+        <li>Ph.D. in Computer Science, NIT Kurukshetra, India (2018–2024)</li>
+        <li>M.Tech. in Computer Science, CDLU Sirsa, India (2013–2015)</li>
+        <li>B.Tech. in Computer Science, MDU Rohtak, India (2008–2012)</li>
+      </ul>
     </div>
 
-    <!-- Publications -->
-    <div class="section" id="publications">
-      <h2>Publications</h2>
-
-      <div class="card">
-        <h3>A cross-attention approach to diagnostic explainability using clinical practice guidelines</h3>
-        <p><em>Conference Name, Year</em></p>
-      </div>
-
-      <div class="card">
-        <h3>Deep knowledge-infusion for explainable depression detection</h3>
-        <p><em>Journal Name, Year</em></p>
-      </div>
-
-      <div class="card">
-        <h3>DepressionFeature: Underlying ontology for user-specific depression analysis</h3>
-        <p><em>Conference/Journal, Year</em></p>
-      </div>
-
-      <p>➡️ Full list on my <a href="https://scholar.google.com/citations?user=vXnzKD8AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+    <div id="experience" class="card p-4">
+      <h2>Experience</h2>
+      <ul>
+        <li><b>Assistant Professor</b>, Bennett University (Mar 2024 – Present)</li>
+        <li><b>Senior Researcher</b>, iHub Anubhuti Foundation, IIIT-Delhi (Jan 2024 – Present)</li>
+        <li><b>Ph.D. Researcher & Teaching Assistant</b>, NIT Kurukshetra (2018 – 2024)</li>
+      </ul>
     </div>
 
-    <!-- Projects -->
-    <div class="section" id="projects">
-      <h2>Projects</h2>
-
-      <div class="card">
-        <h3>Legal Judgment Summarization with Rhetorical Roles</h3>
-        <p>Using rhetorical structure in legal documents to improve case summarization.</p>
-      </div>
-
-      <div class="card">
-        <h3>Ontology-Regularized Multimodal Depression Detection</h3>
-        <p>Fusion of clinical ontologies with multimodal data for transparent diagnosis support.</p>
-      </div>
+    <div id="skills" class="card p-4">
+      <h2>Technical Skills</h2>
+      <p><b>Programming:</b> Python, C++, Data Structures, Algorithms</p>
+      <p><b>AI/ML:</b> NLP, Transformers, BERT, GNNs, Generative AI</p>
+      <p><b>Libraries:</b> TensorFlow, PyTorch, Hugging Face, LangChain</p>
     </div>
 
-    <!-- Contact -->
-    <div class="section" id="contact">
-      <h2>Contact</h2>
-      <p>Email: sumitdalal9050@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/drsumitdalal/" target="_blank">linkedin.com/in/yourid</a></p>
-      <p>Google Scholar: <a href="https://scholar.google.com/citations?user=vXnzKD8AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+    <div id="publications" class="card p-4">
+      <h2>Selected Publications</h2>
+      <ol>
+        <li><b>Dalal, S.</b>, et al. (2024). A Cross Attention Approach to Diagnostic Explainability. <i>IEEE JBHI</i>. <a href="https://ieeexplore.ieee.org/document/10721368">DOI</a></li>
+        <li><b>Dalal, S.</b>, et al. (2024). Deep Knowledge-infusion for Explainable Depression Detection. <i>arXiv</i>. <a href="https://arxiv.org/abs/2409.02122">Link</a></li>
+        <li><b>Dalal, S.</b>, et al. (2025). DepressionFeature: Underlying Ontology for User Specific Social Data Analysis. <i>Journal of Supercomputing</i>. <a href="https://doi.org/10.1007/s11227-024-06585-w">DOI</a></li>
+      </ol>
+      <p><a href="resume.pdf" target="_blank">📄 Full publication list in CV</a></p>
     </div>
+
+    <div id="awards" class="card p-4">
+      <h2>Awards & Fellowships</h2>
+      <ul>
+        <li>Qualified GATE (2016–2019), best AIR: 1824</li>
+        <li>UGC-NET with JRF, best percentile: 99.82%</li>
+      </ul>
+    </div>
+
   </div>
 
   <!-- Footer -->
-  <div class="footer">
-    © 2025 Dr. Sumit Dalal — All Rights Reserved
+  <div class="footer" id="contact">
+    <p>© 2025 Dr. Sumit Dalal | Academic Portfolio</p>
+    <p>Contact: sumitdalal9050@gmail.com</p>
   </div>
 
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
