@@ -1,114 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sumit Dalal - Resume</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        .header { text-align: center; }
-        .section { margin-bottom: 20px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Research Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1b263b;
+      padding: 10px 20px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #ffb703;
+    }
+
+    .toggle-btn {
+      background: #ffb703;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #1b263b, #0d1b2a);
+      color: #fff;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .header h1 {
+      margin-bottom: 10px;
+    }
+
+    /* Sections */
+    .section {
+      margin: 30px 0;
+    }
+
+    .section h2 {
+      border-left: 6px solid #1b263b;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      color: #1b263b;
+    }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      background: #1b263b;
+      color: #fff;
+    }
+
+    /* 🌙 Dark Mode */
+    body.dark-mode {
+      background: #121212;
+      color: #e1e1e1;
+    }
+
+    body.dark-mode .navbar {
+      background: #0d1b2a;
+    }
+
+    body.dark-mode .navbar a {
+      color: #e1e1e1 !important;
+    }
+
+    body.dark-mode .header {
+      background: linear-gradient(to right, #0d1b2a, #1b263b);
+    }
+
+    body.dark-mode h2 {
+      color: #ffb703;
+      border-left-color: #ffb703;
+    }
+
+    body.dark-mode .card {
+      background: #1e293b;
+      color: #f1f1f1;
+    }
+
+    body.dark-mode .footer {
+      background: #0d1b2a;
+      color: #f1f1f1;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Dr. Sumit Dalal</h1>
-            <p>Assistant Professor, Bennett University(The Times Group), India</p>
-            <p><a href="mailto:sumit_6180101@nitkkr.ac.in">sumit_6180101@nitkkr.ac.in</a> | <a href="https://scholar.google.com/citations?user=vXnzKD8AAAAJ&hl=en">Google Scholar</a> | <a href="https://www.linkedin.com/in/drsumitdalal">LinkedIn</a></p>
-        </div>
-        
-        <div class="section">
-            <h2>Education</h2>
-            <ul>
-                <li>Ph.D. in Computer Science, National Institute of Technology Kurukshetra, India (2018 - 2024)</li>
-                <li>M.Tech. in Computer Science, Chaudhary Devi Lal University, Sirsa, India (2013 - 2015)</li>
-                <li>B.Tech. in Computer Science, Maharishi Dayanand University, Rohtak, India (2008 - 2012)</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Assistant Professor</strong>, Bennett University(The Times Group), India (Mar 2024 - Present)</li>
-                <li><strong>Senior Researcher</strong>, iHub Anubhuti Foundation by the Indraprastha Institute of Information Technology Delhi (IIITD), India (Jan 2024 - Present)</li>
-                <li><strong>Ph.D. Researcher & Teaching Assistant</strong>, National Institute of Technology Kurukshetra, India (2018 - 2024)</li>
-                <li><strong>Lecturer</strong>, GATE POINT, Hisar, India (2017 - 2018)</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Programming:</strong> Python, C++, OOPs, Data Structures, Algorithms</li>
-                <li><strong>AI/ML:</strong> NLP, Transformers, BERT, RoBERTa, ChatGPT, CNN, RNN, Attention Mechanisms, Graph Neural Networks, Generative AI, Retrieval Augmented Generation</li>
-                <li><strong>Libraries:</strong> TensorFlow, PyTorch, Hugging Face, Langchain, LangGraph, scikit-learn</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Awards & Fellowships</h2>
-            <ul>
-                <li>Qualified Graduate Aptitude Test in Engineering (<b>GATE</b>) organized by the Ministry of Human Resource and Development (<b>MHRD</b>) in 2016, 2017, 2018, and 2019 with good scores. My best ALL INDIA RANK is <b>1824</b>.</li>
-                <li>ualified for the National Eligibility Test (<b>NET</b>) organized by the University Grants Commission of India (<b>UGC India</b>) in November 2017, July 2018, December 2019, and December 20-June 21 with a Junior Research Fellowship (<b>JRF</b>) in December 2018. My best percentile score is <b>99.8206%</b>.</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>International Journals</h2>
-            <ul>
-                <li> <a href="https://arxiv.org/abs/2409.02122">Deep Knowledge-infusion for Explainable Depression Detection-arXiv.</a> </li>
-                <li> <a href="https://www.emerald.com/insight/content/doi/10.1108/ijaim-02-2023-0045/full/html?skipTracking=true">The effect of IFRS convergence on risk disclosure: an investigation into the Indian accounting system - International Journal of Accounting & Information Management. </a> </li>
-                <li> <a href="https://ieeexplore.ieee.org/abstract/document/10721368">A Cross Attention Approach to Diagnostic Explainability using Clinical Practice Guidelines for Depression - <b>IEEE Journal of Biomedical and Health Informatics</b>.</a> </li>
-                <li> <a href="https://ieeexplore.ieee.org/abstract/document/10749991">Review of advancements in depression detection using social media data - <b>IEEE Transactions on Computational Social Systems</b>.</a> </li>
-                <li> <a href="https://doi.org/10.1007/s11227-024-06585-w">DepressionFeature: Underlying Ontology for User Specific Social Data Analysis - Journal Of Supercomputing. </a> </li>
-                <li> <a href="https://link.springer.com/article/10.1007/s00354-023-00237-y">Convolution Neural Network Having Multiple Channels with Own Attention Layer for Depression Detection from Social Data - <b>New Generation Computing</b>. </a> </li>
-                <li> <a href="https://www.eurekaselect.com/article/125443">An investigation of data requirements for detection of depression from social media posts - Recent Patents on Engineering.</a> </li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>International Conferences</h2>
-            <ul>
-                <li> <a href="https://doi.org/10.1007/978-981-19-9090-8_34">Presented "Early Depression Detection Using Textual Cues from Social Data" at the International Health Informatics Conference (IHIC 2022).</a> </li>
-                <li> <a href="https://doi.org/10.1007/978-981-19-7126-6_7">Presented "An Ontology for Social Media Data Analysis" at the International Semantic Intelligence Conference (ISIC 2022).</a></li>
-                <li> <a href="https://ceur-ws.org/Vol-3320/paper11.pdf">Presented "SemInt at SemTab 2022” at SemTab Challenge co-located with International Semantic Web Conference (ISWC 2022).</a> </li>
-                <li> <a href="https://ceur-ws.org/Vol-3274/paper6.pdf">Presented "Manual Prompt Generation For Language Model Probing” at LM-KBC Challenge co-located with International Semantic Web Conference (ISWC2022).</a></li>
-                <li> <a href="http://dx.doi.org/10.2139/ssrn.3511013">Presented "A Systematic Review of Smart Mental Healthcare” at the 5th International Conference on Cyber Security and Privacy (ICCS 2019).</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Book Chapters</h2>
-            <ul>
-                <li> <a href="https://doi.org/10.1016/B978-0-12-822468-7.00010-9">Smart mental healthcare systems” - Web Semantics, Academic Press 2021.</a></li>
-            </ul>
-        </div>
-                
-        <div class="section">
-            <h2>Workshops</h2>
-            <ul>
-                <li>Participated in "AI-Powered Justice (NyAI-2023)" at NIT Kurukshetra.</li>
-                <li>Attended "Emerging Technologies in Cloud, IoT, UAV, And Satellite Networks (ETCIUS-2023)" at NIT Kurukshetra.</li>
-            </ul>
-        
-        <div class="section">
-            <h2>Reviewer & Technical Committee</h2>
-            <ul>
-                <li>IEEE Journal of Biomedical & Health Informatics (SCIE Indexed).</li>
-                <li>Computers and Electrical Engineering, Elsevier (SCIE Indexed).</li>
-                <li>Computer Methods and Programs in Biomedicine, Elsevier (SCIE Indexed).</li>
-                <li>Expert Systems with Applications, Science Direct (SCIE Indexed).</li>
-                <li>New Generation Computing, Springer (SCIE Indexed).</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>References</h2>
-            <p>Available upon request.</p>
-        </div>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div>
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Your Name</h1>
+    <p>PhD Researcher | Explainable Neuro-Symbolic AI | Mental Health & Legal AI</p>
+  </div>
+
+  <div class="container">
+    <!-- About -->
+    <div class="section" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a researcher specializing in explainable neuro-symbolic multimodal AI for mental health detection and legal applications. My work integrates social media and clinical data with domain ontologies to ensure interpretability and trustworthiness in AI models.
+      </p>
+    </div>
+
+    <!-- Publications -->
+    <div class="section" id="publications">
+      <h2>Publications</h2>
+
+      <div class="card">
+        <h3>A cross-attention approach to diagnostic explainability using clinical practice guidelines</h3>
+        <p><em>Conference Name, Year</em></p>
+      </div>
+
+      <div class="card">
+        <h3>Deep knowledge-infusion for explainable depression detection</h3>
+        <p><em>Journal Name, Year</em></p>
+      </div>
+
+      <div class="card">
+        <h3>DepressionFeature: Underlying ontology for user-specific depression analysis</h3>
+        <p><em>Conference/Journal, Year</em></p>
+      </div>
+
+      <p>➡️ Full list on my <a href="https://scholar.google.com/citations?user=vXnzKD8AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <h3>Legal Judgment Summarization with Rhetorical Roles</h3>
+        <p>Using rhetorical structure in legal documents to improve case summarization.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ontology-Regularized Multimodal Depression Detection</h3>
+        <p>Fusion of clinical ontologies with multimodal data for transparent diagnosis support.</p>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: sumitdalal9050@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/drsumitdalal/" target="_blank">linkedin.com/in/yourid</a></p>
+      <p>Google Scholar: <a href="https://scholar.google.com/citations?user=vXnzKD8AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 Dr. Sumit Dalal — All Rights Reserved
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
